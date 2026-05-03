@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>NeoMath | Raqamli Elektronika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- INTRO ANIMATSIYA -->
+<div id="intro-overlay">
+    <div class="neon-logo">NeoMath</div>
+</div>
+
+<!-- ORQA FON MUSIQASI -->
+<audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_2c6d5e5c0c.mp3?filename=future-technology-128262.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ASOSIY KONTENT -->
+<div class="main-content">
+    <!-- Jonli orqa fon -->
+    <canvas id="bgCanvas"></canvas>
+    
+    <div class="header">NeoMath</div>
+
+    <!-- HOME SAHIFA -->
+    <div id="homePage">
+        <div class="welcome-section">
+            <div class="welcome-title">Raqamli Elektronika Dunyosi</div>
+            <div class="welcome-desc">Mantiqiy elementlarni interaktiv o'rganing</div>
+        </div>
+        <div class="cards-menu">
+            <div class="card" data-goto="lab">
+                <h2>⚡ Mantiqiy elementlar</h2>
+                <p>8 ta asosiy mantiqiy element</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LABORATORIYA 2 KOLONKA -->
+    <div id="labPage" class="lab-container">
+        <div class="two-columns">
+            <!-- CHAP TOMON - MA'LUMOT -->
+            <div class="left-info-panel">
+                <h2 style="color:cyan; margin-bottom:20px;">📘 Element haqida</h2>
+                <div id="dynamicInfo"></div>
+            </div>
+            
+            <!-- O'NG TOMON - SXEMA -->
+            <div class="right-circuit-panel">
+                <div class="circuit-card" id="gatesWrapper"></div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-home" id="backHomeBtn">🏠 Bosh sahifa</button>
+    <button class="music-control" id="musicToggleBtn">🔊 Musiqa O'chirish</button>
+    <div class="fab-plus" id="addGateBtn">+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

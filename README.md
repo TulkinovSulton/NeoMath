@@ -1,0 +1,2 @@
+# NeoMath
+Mantiqiy elementlar
